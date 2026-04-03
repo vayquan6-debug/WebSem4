@@ -38,6 +38,15 @@ function truncate($text, $length = 150) {
 }
 
 /**
+ * Trả về URL ảnh tour — hỗ trợ cả URL online và file local
+ */
+function tourImage($image, $fallback = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80') {
+    if (!$image) return $fallback;
+    if (str_starts_with($image, 'http')) return $image;
+    return 'assets/images/' . $image;
+}
+
+/**
  * Flash messages
  */
 function setFlash($type, $message) {

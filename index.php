@@ -31,7 +31,7 @@ $allTours = mysqli_query($conn, "SELECT * FROM tours WHERE active = 1 ORDER BY c
     <?php while ($tour = mysqli_fetch_assoc($featured)): ?>
     <div class="tour-card">
       <div class="tour-card__image">
-        <img src="assets/images/<?= $tour['image'] ?>" alt="<?= $tour['name'] ?>" onerror="this.src='assets/images/default-tour.jpg'">
+        <img src="<?= tourImage($tour['image']) ?>" alt="<?= $tour['name'] ?>" onerror="this.style.display='none'">
         <?php if ($tour['featured']): ?>
           <span class="badge badge-hot">🔥 Hot</span>
         <?php endif; ?>
@@ -61,7 +61,7 @@ $allTours = mysqli_query($conn, "SELECT * FROM tours WHERE active = 1 ORDER BY c
     <?php while ($tour = mysqli_fetch_assoc($allTours)): ?>
     <div class="tour-card">
       <div class="tour-card__image">
-        <img src="assets/images/<?= $tour['image'] ?>" alt="<?= $tour['name'] ?>" onerror="this.src='assets/images/default-tour.jpg'">
+        <img src="<?= tourImage($tour['image']) ?>" alt="<?= $tour['name'] ?>" onerror="this.style.display='none'">
       </div>
       <div class="tour-card__body">
         <h3><a href="tour.php?id=<?= $tour['id'] ?>"><?= $tour['name'] ?></a></h3>

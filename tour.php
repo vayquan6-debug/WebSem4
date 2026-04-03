@@ -38,7 +38,7 @@ $avgData = mysqli_fetch_assoc($avgResult);
   <!-- Tour header -->
   <div class="tour-header">
     <div class="tour-header__image">
-      <img src="assets/images/<?= $tour['image'] ?>" alt="<?= $tour['name'] ?>" onerror="this.src='assets/images/default-tour.jpg'">
+      <img src="<?= tourImage($tour['image']) ?>" alt="<?= $tour['name'] ?>" onerror="this.style.display='none'">
       <?php if ($tour['featured']): ?>
         <span class="badge badge-hot">🔥 Tour Hot</span>
       <?php endif; ?>

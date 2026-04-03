@@ -99,42 +99,42 @@ INSERT INTO tours (name, slug, destination, price, duration_days, max_people, de
 ('Vịnh Hạ Long 3N2Đ', 'vinh-ha-long-3n2d', 'Quảng Ninh', 4500000, 3, 30,
  'Khám phá kỳ quan thiên nhiên thế giới UNESCO — Vịnh Hạ Long với hàng nghìn đảo đá vôi hùng vĩ. Tour bao gồm du thuyền 5 sao, chèo kayak, tham quan hang Sửng Sốt.',
  'Ngày 1: Hà Nội → Hạ Long, lên du thuyền, tham quan hang Sửng Sốt\nNgày 2: Chèo kayak, tắm biển, BBQ trên thuyền\nNgày 3: Ngắm bình minh, trở về Hà Nội',
- 'halong.jpg', 1),
+ 'https://images.unsplash.com/photo-1528127269322-539801943592?w=800&q=80', 1),
 
 ('Đà Nẵng - Hội An 4N3Đ', 'da-nang-hoi-an-4n3d', 'Đà Nẵng', 5200000, 4, 25,
  'Bãi biển Mỹ Khê top 6 thế giới, phố cổ Hội An lung linh đèn lồng, Bà Nà Hills với Cầu Vàng nổi tiếng.',
  'Ngày 1: Đà Nẵng, Bà Nà Hills\nNgày 2: Bãi biển Mỹ Khê, Ngũ Hành Sơn\nNgày 3: Phố cổ Hội An, đêm hoa đăng\nNgày 4: Chợ Hàn, bay về',
- 'danang.jpg', 1),
+ 'https://images.unsplash.com/photo-1559592413-7cec4d0cbb28?w=800&q=80', 1),
 
 ('Phú Quốc Paradise 5N4Đ', 'phu-quoc-paradise-5n4d', 'Kiên Giang', 7800000, 5, 20,
  'Nghỉ dưỡng đảo ngọc Phú Quốc — resort 5 sao, lặn ngắm san hô, câu cá, sunset tại bãi Sao.',
  'Ngày 1: Bay đến Phú Quốc, nhận phòng resort\nNgày 2: Tour 4 đảo, lặn ngắm san hô\nNgày 3: VinWonders, Grand World\nNgày 4: Bãi Sao, chợ đêm Dinh Cậu\nNgày 5: Tự do, bay về',
- 'phuquoc.jpg', 1),
+ 'https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=80', 1),
 
 ('Sapa Trekking 3N2Đ', 'sapa-trekking-3n2d', 'Lào Cai', 3200000, 3, 15,
  'Trekking ruộng bậc thang Mù Cang Chải, homestay bản làng, đỉnh Fansipan — nóc nhà Đông Dương.',
  'Ngày 1: Hà Nội → Sapa, trekking bản Cát Cát\nNgày 2: Chinh phục Fansipan bằng cáp treo\nNgày 3: Chợ phiên Bắc Hà, về Hà Nội',
- 'sapa.jpg', 0),
+ 'https://images.unsplash.com/photo-1570366583862-f91883984fde?w=800&q=80', 0),
 
 ('Huế Cố Đô 2N1Đ', 'hue-co-do-2n1d', 'Thừa Thiên Huế', 2800000, 2, 30,
  'Khám phá di sản văn hóa cố đô Huế — Đại Nội, lăng tẩm vua Nguyễn, sông Hương thơ mộng.',
  'Ngày 1: Đại Nội Huế, Lăng Minh Mạng, Lăng Tự Đức\nNgày 2: Chùa Thiên Mụ, Cầu Trường Tiền, đặc sản Huế',
- 'hue.jpg', 0),
+ 'https://images.unsplash.com/photo-1602154017299-bc9e905aea0e?w=800&q=80', 0),
 
 ('Nha Trang Biển Xanh 3N2Đ', 'nha-trang-bien-xanh-3n2d', 'Khánh Hòa', 3800000, 3, 25,
  'Thành phố biển xinh đẹp — Vinpearl Land, tháp Bà Ponagar, tắm bùn khoáng nóng.',
  'Ngày 1: Bay đến Nha Trang, Vinpearl Land\nNgày 2: Tour 4 đảo, lặn biển\nNgày 3: Tháp Bà Ponagar, tắm bùn, bay về',
- 'nhatrang.jpg', 1),
+ 'https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=800&q=80', 1),
 
 ('Đà Lạt Mộng Mơ 3N2Đ', 'da-lat-mong-mo-3n2d', 'Lâm Đồng', 3500000, 3, 20,
  'Thành phố ngàn hoa — Hồ Xuân Hương, Đồi Chè Cầu Đất, thác Datanla, chợ đêm Đà Lạt.',
  'Ngày 1: Bay đến Đà Lạt, Hồ Xuân Hương, chợ đêm\nNgày 2: Đồi Chè Cầu Đất, Thác Datanla\nNgày 3: QUÊ Garden, Thiền Viện Trúc Lâm, bay về',
- 'dalat.jpg', 0),
+ 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=800&q=80', 0),
 
 ('Mũi Né - Phan Thiết 2N1Đ', 'mui-ne-phan-thiet-2n1d', 'Bình Thuận', 2200000, 2, 30,
  'Đồi cát bay Mũi Né, Suối Tiên, làng chài Mũi Né, hải sản tươi sống.',
  'Ngày 1: TP.HCM → Mũi Né, Đồi Cát Bay, Suối Tiên\nNgày 2: Bãi biển, làng chài, về TP.HCM',
- 'muine.jpg', 0);
+ 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80', 0);
 
 -- Bookings mẫu
 INSERT INTO bookings (booking_code, tour_id, user_id, full_name, email, phone, num_people, start_date, status, total_price) VALUES

@@ -90,7 +90,7 @@ $destinations = mysqli_query($conn, "SELECT DISTINCT destination FROM tours WHER
         <?php while ($tour = mysqli_fetch_assoc($result)): ?>
         <div class="tour-card">
           <div class="tour-card__image">
-            <img src="assets/images/<?= $tour['image'] ?>" alt="<?= $tour['name'] ?>" onerror="this.src='assets/images/default-tour.jpg'">
+            <img src="<?= tourImage($tour['image']) ?>" alt="<?= $tour['name'] ?>" onerror="this.style.display='none'">
           </div>
           <div class="tour-card__body">
             <h3><a href="tour.php?id=<?= $tour['id'] ?>"><?= $tour['name'] ?></a></h3>
