@@ -24,6 +24,9 @@ mysqli_set_charset($conn, "utf8mb4");
 // Session
 session_start();
 
+// Load helper functions
+require_once __DIR__ . '/includes/functions.php';
+
 /**
  * Helper: kiểm tra đăng nhập
  */
