@@ -28,8 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="booking-container">
     <div class="booking-tour-info">
       <h3>🏖️ VietTour — Công ty Du lịch số 1 Việt Nam</h3>
-      <p>📍 123 Nguyễn Huệ, Quận 1, TP.HCM</p>
-      <p>📞 Hotline: 1900-6868 | ✉️ info@viettour.local</p>
+      <p>📍 Q1, TP.HCM</p>
+      <p>📞 Hotline: 123456 | ✉️ info@viettour.local</p>
       <p>🕐 Giờ làm việc: 8:00 - 20:00 (T2 - CN)</p>
     </div>
 

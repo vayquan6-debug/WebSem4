@@ -101,7 +101,7 @@ $allTours = mysqli_query($conn, "SELECT * FROM tours WHERE active = 1 ORDER BY c
     <div class="feature">
       <div class="feature-icon">📞</div>
       <h3>Hỗ trợ 24/7</h3>
-      <p>Hotline 1900-6868, hỗ trợ bạn mọi lúc mọi nơi.</p>
+      <p>Hotline 123456, hỗ trợ bạn mọi lúc mọi nơi.</p>
     </div>
   </div>
 </section>

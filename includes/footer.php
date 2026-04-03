@@ -19,8 +19,8 @@
       </div>
       <div class="footer-col">
         <h4>Liên hệ</h4>
-        <p>📍 123 Nguyễn Huệ, Q.1, TP.HCM</p>
-        <p>📞 1900-6868</p>
+        <p>📍 Q1, TP.HCM</p>
+        <p>📞 123456</p>
         <p>✉️ info@viettour.local</p>
       </div>
     </div>
