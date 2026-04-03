@@ -19,10 +19,11 @@ CREATE TABLE users (
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     email VARCHAR(100),
-    fullname VARCHAR(100),
+    full_name VARCHAR(100),
     phone VARCHAR(20),
     role ENUM('admin','user') DEFAULT 'user',
     avatar VARCHAR(255) DEFAULT NULL,
+    last_login TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -47,11 +48,11 @@ CREATE TABLE bookings (
     booking_code VARCHAR(20) NOT NULL,
     tour_id INT NOT NULL,
     user_id INT DEFAULT NULL,
-    customer_name VARCHAR(100) NOT NULL,
-    customer_email VARCHAR(100),
-    customer_phone VARCHAR(20),
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    phone VARCHAR(20),
     num_people INT DEFAULT 1,
-    travel_date DATE,
+    start_date DATE,
     notes TEXT,
     payment_proof VARCHAR(255),
     status ENUM('pending','confirmed','cancelled','completed') DEFAULT 'pending',
@@ -84,7 +85,7 @@ CREATE TABLE contact_messages (
 -- ========== SEED DATA ==========
 
 -- Admin & users (MD5 hash — cố ý yếu, KHÔNG dùng bcrypt)
-INSERT INTO users (username, password, email, fullname, phone, role) VALUES
+INSERT INTO users (username, password, email, full_name, phone, role) VALUES
 ('admin',   MD5('admin123'),       'admin@viettour.local',   'Administrator',       '0901234567', 'admin'),
 ('manager', MD5('manager2026'),    'manager@viettour.local', 'Nguyễn Văn Manager',  '0907654321', 'admin'),
 ('editor',  MD5('editor!'),        'editor@viettour.local',  'Trần Thị Editor',     '0912345678', 'admin'),
@@ -136,7 +137,7 @@ INSERT INTO tours (name, slug, destination, price, duration_days, max_people, de
  'muine.jpg', 0);
 
 -- Bookings mẫu
-INSERT INTO bookings (booking_code, tour_id, user_id, customer_name, customer_email, customer_phone, num_people, travel_date, status, total_price) VALUES
+INSERT INTO bookings (booking_code, tour_id, user_id, full_name, email, phone, num_people, start_date, status, total_price) VALUES
 ('VT-2026-001', 1, 4, 'Lê Văn User', 'user1@viettour.local', '0923456789', 2, '2026-04-15', 'confirmed', 9000000),
 ('VT-2026-002', 2, 5, 'Phạm Thị Khách', 'user2@viettour.local', '0934567890', 3, '2026-05-01', 'pending', 15600000),
 ('VT-2026-003', 3, 6, 'Nguyễn Văn Giám Đốc', 'giamdoc@viettour.local', '0945678901', 4, '2026-04-20', 'confirmed', 31200000),
