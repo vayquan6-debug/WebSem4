@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Chặn truy cập config trực tiếp
+<Files "config.php">
+    # Cố ý KHÔNG chặn — info disclosure
+</Files>
+
+# Cho phép .htaccess override
+Options +FollowSymLinks
+
+# KHÔNG tắt directory listing (cố ý — S03 information disclosure)
+Options +Indexes
