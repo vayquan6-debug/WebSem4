@@ -45,8 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     mysqli_query($conn, "UPDATE bookings SET payment_proof = '$uploadPath', status = 'paid' WHERE booking_code = '$booking_code'");
                 }
                 setFlash('success', "Upload thành công! File: <a href='$uploadPath' target='_blank'>$filename</a>");
+                redirect("upload.php?code=$booking_code");
             } else {
                 setFlash('error', 'Upload thất bại. Vui lòng thử lại.');
+                redirect("upload.php");
             }
         }
     } else {
