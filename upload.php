@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Cập nhật booking nếu có code
                 if ($booking_code) {
                     // VULN: SQL Injection (S04)
-                    mysqli_query($conn, "UPDATE bookings SET payment_proof = '$uploadPath', status = 'paid' WHERE booking_code = '$booking_code'");
+                    mysqli_query($conn, "UPDATE bookings SET payment_proof = '$uploadPath', status = 'confirmed' WHERE booking_code = '$booking_code'");
                 }
                 setFlash('success', "Upload thành công! File: <a href='$uploadPath' target='_blank'>$filename</a>");
                 redirect("upload.php?code=$booking_code");
