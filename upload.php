@@ -4,8 +4,7 @@
  * Chỉ kiểm tra extension phía client, server validation yếu
  * Có thể bypass bằng double extension hoặc MIME spoofing
  */
-$pageTitle = 'Upload biên lai';
-require_once 'includes/header.php';
+require_once 'config.php';
 
 $message = '';
 
@@ -57,6 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $code = isset($_GET['code']) ? $_GET['code'] : '';
+
+$pageTitle = 'Upload biên lai';
+require_once 'includes/header.php';
 ?>
 
 <section class="section">
